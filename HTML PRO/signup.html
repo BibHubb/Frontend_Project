@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="BORCELLE.jpg" width="150px" height="150px" class="logo" alt=""></a>
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="poster">
+        <main>
+            <!-- Sign Up form will be displayed here -->
+            <form action="signup.html" method="POST">
+                <h2>Sign Up</h2><br>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div id="signbtn">
+                    <button type="button" onclick="showdata()">Sign Up</button>
+                </div><br>
+                <div>
+                    <p>Already having an account?<a href="signin.html">Sign In</a>
+                </div>
+            </form>
+        </main>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ecommerce Website. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript">
+        function showdata()
+        {
+            var username=document.getElementById("username").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            var cnfpass=document.getElementById("confirm_password").value;
+
+            alert("username=" + username + "email" + email + "password" + password + "cnfpass" + cnfpass);
+            
+        }
+    </script>
+</body>
+
+</html>
